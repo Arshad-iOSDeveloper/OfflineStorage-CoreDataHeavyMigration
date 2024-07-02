@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFAE02B12B282F4E0079EEDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02B02B282F4E0079EEDA /* AppDelegate.swift */; };
+		EFAE02B32B282F4E0079EEDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02B22B282F4E0079EEDA /* SceneDelegate.swift */; };
+		EFAE02B52B282F4E0079EEDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02B42B282F4E0079EEDA /* ViewController.swift */; };
+		EFAE02B82B282F4E0079EEDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAE02B62B282F4E0079EEDA /* Main.storyboard */; };
+		EFAE02BB2B282F4E0079EEDA /* CoreDataSchoolDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02B92B282F4E0079EEDA /* CoreDataSchoolDB.xcdatamodeld */; };
+		EFAE02BD2B282F4F0079EEDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAE02BC2B282F4F0079EEDA /* Assets.xcassets */; };
+		EFAE02C02B282F4F0079EEDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAE02BE2B282F4F0079EEDA /* LaunchScreen.storyboard */; };
+		EFAE02E42B2833210079EEDA /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02E12B2833210079EEDA /* BaseRepository.swift */; };
+		EFAE02E52B2833210079EEDA /* DepartmentDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02E22B2833210079EEDA /* DepartmentDataRepository.swift */; };
+		EFAE02E62B2833210079EEDA /* SchoolDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02E32B2833210079EEDA /* SchoolDataRepository.swift */; };
+		EFAE02E82B2833870079EEDA /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02E72B2833870079EEDA /* PersistentStorage.swift */; };
+		EFAE02EC2B2833FC0079EEDA /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02EA2B2833FC0079EEDA /* Department.swift */; };
+		EFAE02ED2B2833FC0079EEDA /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02EB2B2833FC0079EEDA /* School.swift */; };
+		EFAE02EF2B2834620079EEDA /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02EE2B2834620079EEDA /* Student.swift */; };
+		EFAE02F32B283BA60079EEDA /* CDSchoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02F12B283BA60079EEDA /* CDSchoolExtensions.swift */; };
+		EFAE02F42B283BA60079EEDA /* CDDepartmentExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02F22B283BA60079EEDA /* CDDepartmentExtensions.swift */; };
+		EFAE02F62B283C940079EEDA /* CDStudentExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02F52B283C940079EEDA /* CDStudentExtensions.swift */; };
+		EFAE02F82B283E520079EEDA /* StudentDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02F72B283E520079EEDA /* StudentDataRepository.swift */; };
+		EFAE02FC2B2840AC0079EEDA /* SchoolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02FA2B2840AC0079EEDA /* SchoolManager.swift */; };
+		EFAE02FD2B2840AC0079EEDA /* DepartmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02FB2B2840AC0079EEDA /* DepartmentManager.swift */; };
+		EFAE02FF2B2841A60079EEDA /* StudentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE02FE2B2841A60079EEDA /* StudentManager.swift */; };
+		EFAE03432B287A560079EEDA /* CDAddress+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE033B2B287A560079EEDA /* CDAddress+CoreDataClass.swift */; };
+		EFAE03442B287A560079EEDA /* CDAddress+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE033C2B287A560079EEDA /* CDAddress+CoreDataProperties.swift */; };
+		EFAE03452B287A560079EEDA /* CDDepartment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE033D2B287A560079EEDA /* CDDepartment+CoreDataClass.swift */; };
+		EFAE03462B287A560079EEDA /* CDDepartment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE033E2B287A560079EEDA /* CDDepartment+CoreDataProperties.swift */; };
+		EFAE03472B287A560079EEDA /* CDSchool+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE033F2B287A560079EEDA /* CDSchool+CoreDataClass.swift */; };
+		EFAE03482B287A560079EEDA /* CDSchool+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE03402B287A560079EEDA /* CDSchool+CoreDataProperties.swift */; };
+		EFAE03492B287A560079EEDA /* CDStudent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE03412B287A560079EEDA /* CDStudent+CoreDataClass.swift */; };
+		EFAE034A2B287A560079EEDA /* CDStudent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE03422B287A560079EEDA /* CDStudent+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EFAE02AD2B282F4E0079EEDA /* HeavyMigrationCoreDataSchoolDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeavyMigrationCoreDataSchoolDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAE02B02B282F4E0079EEDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFAE02B22B282F4E0079EEDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFAE02B42B282F4E0079EEDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFAE02B72B282F4E0079EEDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFAE02BA2B282F4E0079EEDA /* CoreDataSchoolDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataSchoolDB.xcdatamodel; sourceTree = "<group>"; };
+		EFAE02BC2B282F4F0079EEDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFAE02BF2B282F4F0079EEDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFAE02C12B282F4F0079EEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAE02E12B2833210079EEDA /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		EFAE02E22B2833210079EEDA /* DepartmentDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentDataRepository.swift; sourceTree = "<group>"; };
+		EFAE02E32B2833210079EEDA /* SchoolDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDataRepository.swift; sourceTree = "<group>"; };
+		EFAE02E72B2833870079EEDA /* PersistentStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistentStorage.swift; path = CoreDataSchoolDB/PersistentStorage.swift; sourceTree = SOURCE_ROOT; };
+		EFAE02EA2B2833FC0079EEDA /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		EFAE02EB2B2833FC0079EEDA /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		EFAE02EE2B2834620079EEDA /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		EFAE02F12B283BA60079EEDA /* CDSchoolExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDSchoolExtensions.swift; sourceTree = "<group>"; };
+		EFAE02F22B283BA60079EEDA /* CDDepartmentExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDepartmentExtensions.swift; sourceTree = "<group>"; };
+		EFAE02F52B283C940079EEDA /* CDStudentExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDStudentExtensions.swift; sourceTree = "<group>"; };
+		EFAE02F72B283E520079EEDA /* StudentDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDataRepository.swift; sourceTree = "<group>"; };
+		EFAE02FA2B2840AC0079EEDA /* SchoolManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolManager.swift; sourceTree = "<group>"; };
+		EFAE02FB2B2840AC0079EEDA /* DepartmentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentManager.swift; sourceTree = "<group>"; };
+		EFAE02FE2B2841A60079EEDA /* StudentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManager.swift; sourceTree = "<group>"; };
+		EFAE031A2B2874FA0079EEDA /* CoreDataSchoolDB v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataSchoolDB v2.xcdatamodel"; sourceTree = "<group>"; };
+		EFAE033B2B287A560079EEDA /* CDAddress+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDAddress+CoreDataClass.swift"; path = "CoreDataSchoolDB/CDAddress+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EFAE033C2B287A560079EEDA /* CDAddress+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDAddress+CoreDataProperties.swift"; path = "CoreDataSchoolDB/CDAddress+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EFAE033D2B287A560079EEDA /* CDDepartment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDDepartment+CoreDataClass.swift"; path = "CoreDataSchoolDB/CDDepartment+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EFAE033E2B287A560079EEDA /* CDDepartment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDDepartment+CoreDataProperties.swift"; path = "CoreDataSchoolDB/CDDepartment+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EFAE033F2B287A560079EEDA /* CDSchool+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDSchool+CoreDataClass.swift"; path = "CoreDataSchoolDB/CDSchool+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EFAE03402B287A560079EEDA /* CDSchool+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDSchool+CoreDataProperties.swift"; path = "CoreDataSchoolDB/CDSchool+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EFAE03412B287A560079EEDA /* CDStudent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDStudent+CoreDataClass.swift"; path = "CoreDataSchoolDB/CDStudent+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EFAE03422B287A560079EEDA /* CDStudent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDStudent+CoreDataProperties.swift"; path = "CoreDataSchoolDB/CDStudent+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFAE02AA2B282F4E0079EEDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFAE02A42B282F4E0079EEDA = {
+			isa = PBXGroup;
+			children = (
+				EFAE02AF2B282F4E0079EEDA /* CoreDataSchoolDB */,
+				EFAE02AE2B282F4E0079EEDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFAE02AE2B282F4E0079EEDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE02AD2B282F4E0079EEDA /* HeavyMigrationCoreDataSchoolDB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFAE02AF2B282F4E0079EEDA /* CoreDataSchoolDB */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE02D32B2832B40079EEDA /* ManagedObjectModels */,
+				EFAE02E02B2832F80079EEDA /* Repository */,
+				EFAE02E92B2833FC0079EEDA /* Models */,
+				EFAE02F02B283BA60079EEDA /* CDExtensions */,
+				EFAE02F92B2840AC0079EEDA /* Managers */,
+				EFAE02E72B2833870079EEDA /* PersistentStorage.swift */,
+				EFAE02B02B282F4E0079EEDA /* AppDelegate.swift */,
+				EFAE02B22B282F4E0079EEDA /* SceneDelegate.swift */,
+				EFAE02B42B282F4E0079EEDA /* ViewController.swift */,
+				EFAE02B62B282F4E0079EEDA /* Main.storyboard */,
+				EFAE02BC2B282F4F0079EEDA /* Assets.xcassets */,
+				EFAE02BE2B282F4F0079EEDA /* LaunchScreen.storyboard */,
+				EFAE02C12B282F4F0079EEDA /* Info.plist */,
+				EFAE02B92B282F4E0079EEDA /* CoreDataSchoolDB.xcdatamodeld */,
+			);
+			path = CoreDataSchoolDB;
+			sourceTree = "<group>";
+		};
+		EFAE02D32B2832B40079EEDA /* ManagedObjectModels */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE033B2B287A560079EEDA /* CDAddress+CoreDataClass.swift */,
+				EFAE033C2B287A560079EEDA /* CDAddress+CoreDataProperties.swift */,
+				EFAE033D2B287A560079EEDA /* CDDepartment+CoreDataClass.swift */,
+				EFAE033E2B287A560079EEDA /* CDDepartment+CoreDataProperties.swift */,
+				EFAE033F2B287A560079EEDA /* CDSchool+CoreDataClass.swift */,
+				EFAE03402B287A560079EEDA /* CDSchool+CoreDataProperties.swift */,
+				EFAE03412B287A560079EEDA /* CDStudent+CoreDataClass.swift */,
+				EFAE03422B287A560079EEDA /* CDStudent+CoreDataProperties.swift */,
+			);
+			path = ManagedObjectModels;
+			sourceTree = "<group>";
+		};
+		EFAE02E02B2832F80079EEDA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE02E12B2833210079EEDA /* BaseRepository.swift */,
+				EFAE02E32B2833210079EEDA /* SchoolDataRepository.swift */,
+				EFAE02E22B2833210079EEDA /* DepartmentDataRepository.swift */,
+				EFAE02F72B283E520079EEDA /* StudentDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EFAE02E92B2833FC0079EEDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE02EB2B2833FC0079EEDA /* School.swift */,
+				EFAE02EA2B2833FC0079EEDA /* Department.swift */,
+				EFAE02EE2B2834620079EEDA /* Student.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFAE02F02B283BA60079EEDA /* CDExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE02F12B283BA60079EEDA /* CDSchoolExtensions.swift */,
+				EFAE02F22B283BA60079EEDA /* CDDepartmentExtensions.swift */,
+				EFAE02F52B283C940079EEDA /* CDStudentExtensions.swift */,
+			);
+			path = CDExtensions;
+			sourceTree = "<group>";
+		};
+		EFAE02F92B2840AC0079EEDA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE02FA2B2840AC0079EEDA /* SchoolManager.swift */,
+				EFAE02FB2B2840AC0079EEDA /* DepartmentManager.swift */,
+				EFAE02FE2B2841A60079EEDA /* StudentManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFAE02AC2B282F4E0079EEDA /* HeavyMigrationCoreDataSchoolDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFAE02C42B282F4F0079EEDA /* Build configuration list for PBXNativeTarget "HeavyMigrationCoreDataSchoolDB" */;
+			buildPhases = (
+				EFAE02A92B282F4E0079EEDA /* Sources */,
+				EFAE02AA2B282F4E0079EEDA /* Frameworks */,
+				EFAE02AB2B282F4E0079EEDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeavyMigrationCoreDataSchoolDB;
+			productName = CoreDataSchoolDB;
+			productReference = EFAE02AD2B282F4E0079EEDA /* HeavyMigrationCoreDataSchoolDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFAE02A52B282F4E0079EEDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EFAE02AC2B282F4E0079EEDA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EFAE02A82B282F4E0079EEDA /* Build configuration list for PBXProject "HeavyMigrationCoreDataSchoolDB" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFAE02A42B282F4E0079EEDA;
+			productRefGroup = EFAE02AE2B282F4E0079EEDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFAE02AC2B282F4E0079EEDA /* HeavyMigrationCoreDataSchoolDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFAE02AB2B282F4E0079EEDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFAE02C02B282F4F0079EEDA /* LaunchScreen.storyboard in Resources */,
+				EFAE02BD2B282F4F0079EEDA /* Assets.xcassets in Resources */,
+				EFAE02B82B282F4E0079EEDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFAE02A92B282F4E0079EEDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFAE03492B287A560079EEDA /* CDStudent+CoreDataClass.swift in Sources */,
+				EFAE02E52B2833210079EEDA /* DepartmentDataRepository.swift in Sources */,
+				EFAE02FF2B2841A60079EEDA /* StudentManager.swift in Sources */,
+				EFAE03482B287A560079EEDA /* CDSchool+CoreDataProperties.swift in Sources */,
+				EFAE02F32B283BA60079EEDA /* CDSchoolExtensions.swift in Sources */,
+				EFAE02FC2B2840AC0079EEDA /* SchoolManager.swift in Sources */,
+				EFAE02EC2B2833FC0079EEDA /* Department.swift in Sources */,
+				EFAE02F62B283C940079EEDA /* CDStudentExtensions.swift in Sources */,
+				EFAE03462B287A560079EEDA /* CDDepartment+CoreDataProperties.swift in Sources */,
+				EFAE02B52B282F4E0079EEDA /* ViewController.swift in Sources */,
+				EFAE02EF2B2834620079EEDA /* Student.swift in Sources */,
+				EFAE03452B287A560079EEDA /* CDDepartment+CoreDataClass.swift in Sources */,
+				EFAE03432B287A560079EEDA /* CDAddress+CoreDataClass.swift in Sources */,
+				EFAE02E82B2833870079EEDA /* PersistentStorage.swift in Sources */,
+				EFAE02B12B282F4E0079EEDA /* AppDelegate.swift in Sources */,
+				EFAE03472B287A560079EEDA /* CDSchool+CoreDataClass.swift in Sources */,
+				EFAE02E42B2833210079EEDA /* BaseRepository.swift in Sources */,
+				EFAE02F82B283E520079EEDA /* StudentDataRepository.swift in Sources */,
+				EFAE03442B287A560079EEDA /* CDAddress+CoreDataProperties.swift in Sources */,
+				EFAE02BB2B282F4E0079EEDA /* CoreDataSchoolDB.xcdatamodeld in Sources */,
+				EFAE02E62B2833210079EEDA /* SchoolDataRepository.swift in Sources */,
+				EFAE02F42B283BA60079EEDA /* CDDepartmentExtensions.swift in Sources */,
+				EFAE034A2B287A560079EEDA /* CDStudent+CoreDataProperties.swift in Sources */,
+				EFAE02ED2B2833FC0079EEDA /* School.swift in Sources */,
+				EFAE02B32B282F4E0079EEDA /* SceneDelegate.swift in Sources */,
+				EFAE02FD2B2840AC0079EEDA /* DepartmentManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFAE02B62B282F4E0079EEDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFAE02B72B282F4E0079EEDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFAE02BE2B282F4F0079EEDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFAE02BF2B282F4F0079EEDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFAE02C22B282F4F0079EEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFAE02C32B282F4F0079EEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFAE02C52B282F4F0079EEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4DDR234XH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoreDataSchoolDB/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = creliohealth.CoreDataSchoolDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFAE02C62B282F4F0079EEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4DDR234XH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoreDataSchoolDB/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = creliohealth.CoreDataSchoolDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFAE02A82B282F4E0079EEDA /* Build configuration list for PBXProject "HeavyMigrationCoreDataSchoolDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFAE02C22B282F4F0079EEDA /* Debug */,
+				EFAE02C32B282F4F0079EEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFAE02C42B282F4F0079EEDA /* Build configuration list for PBXNativeTarget "HeavyMigrationCoreDataSchoolDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFAE02C52B282F4F0079EEDA /* Debug */,
+				EFAE02C62B282F4F0079EEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EFAE02B92B282F4E0079EEDA /* CoreDataSchoolDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EFAE031A2B2874FA0079EEDA /* CoreDataSchoolDB v2.xcdatamodel */,
+				EFAE02BA2B282F4E0079EEDA /* CoreDataSchoolDB.xcdatamodel */,
+			);
+			currentVersion = EFAE031A2B2874FA0079EEDA /* CoreDataSchoolDB v2.xcdatamodel */;
+			path = CoreDataSchoolDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EFAE02A52B282F4E0079EEDA /* Project object */;
+}

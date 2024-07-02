@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDDepartment" representedClassName="CDDepartment" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toSchool" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDSchool" inverseName="toDepartment" inverseEntity="CDSchool"/>
+        <relationship name="toStudent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDStudent" inverseName="toDepartment" inverseEntity="CDStudent"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CDSchool" representedClassName="CDSchool" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toDepartment" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDDepartment" inverseName="toSchool" inverseEntity="CDDepartment"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CDStudent" representedClassName="CDStudent" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toDepartment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDDepartment" inverseName="toStudent" inverseEntity="CDDepartment"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+</model>
